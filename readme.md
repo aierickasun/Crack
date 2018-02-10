@@ -5,6 +5,6 @@ This one way hash function utilizes a key and salt. Note, however, that given th
  salt would be ab. So you would use ab as the salt along with the words of the dictionary.
  Useful File read Terminators: 
  https://stackoverflow.com/questions/1835986/how-to-use-eof-to-run-through-a-text-file-in-c
- A little mishap, when comparing strings, simply doing (str1 == str2) doesn'twork since that's just comparing
- The pointers(memory locations) of the two strings, which will obviously be false.
- Instead, opt for suing strcmp(check, input)==0;..
+ A little mishap, when comparing strings, simply doing (str1 == str2) doesn't work since that's just comparing
+ the pointers(memory locations) of the two strings, which will obviously be false.
+ Instead, opt for using strcmp(check, input)==0;..
